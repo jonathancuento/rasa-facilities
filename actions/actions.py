@@ -44,7 +44,7 @@ def get_address(location, facility):
     for facilityResponse in dataFacilities:
         if facilityResponse.get("facility") == facility and facilityResponse.get("location") == location:
             return facilityResponse.get("address")
-    return ''
+    return 'We do not have locations there, sorry'
 
 class ActionHelloWorld(Action):
 
